@@ -1,0 +1,21 @@
+{
+  "name": "pangyo-coin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jungyoun/pangyo-coin.git"
+  },
+  "author": "alphadom",
+  "license": "ISC",
+  "dependencies": {
+    "openzeppelin-solidity": "^1.12.0"
+  }
+}
