@@ -16,7 +16,6 @@ const HDWalletProvider = require("truffle-hdwallet-provider");
 
 require('dotenv').config()  // Store environment-specific variable from '.env' to process.env
 
-
 module.exports = {
   networks: {
     development: {
@@ -26,26 +25,26 @@ module.exports = {
     },
     ropsten: {
       provider: () => new HDWalletProvider(process.env.MNENOMIC, "https://ropsten.infura.io/v3/" + process.env.INFURA_API_KEY),
-      network_id: 3,
+      network_id: "*",
       gas: 3000000,
       gasPrice: 21
     },
     kovan: {
       provider: () => new HDWalletProvider(process.env.MNENOMIC, "https://kovan.infura.io/v3/" + process.env.INFURA_API_KEY),
-      network_id: 42,
+      network_id: "*",
       gas: 3000000,
       gasPrice: 21
     },
     rinkeby: {
       provider: () => new HDWalletProvider(process.env.MNENOMIC, "https://rinkeby.infura.io/v3/" + process.env.INFURA_API_KEY),
-      network_id: 4,
+      network_id: "*",
       gas: 3000000,
       gasPrice: 21
     },
     // main ethereum network(mainnet)
     main: {
       provider: () => new HDWalletProvider(process.env.MNENOMIC, "https://mainnet.infura.io/v3/" + process.env.INFURA_API_KEY),
-      network_id: 1,
+      network_id: "*",
       gas: 3000000,
       gasPrice: 21
     }

@@ -6,9 +6,9 @@ contract PangyoCoin is StandardToken {
   string public name = "PangyoCoin";
   string public symbol = "PANG";
   uint public decimals = 8;
-  uint public INITIAL_SUPPLY = 1000000 * (10 ** decimals);
+  uint public INITIAL_SUPPLY = 100000000 * (10 ** decimals);
 
-  function MyCoin() public {
+  constructor() public {
     totalSupply_ = INITIAL_SUPPLY;
     balances[msg.sender] = INITIAL_SUPPLY;
   }
